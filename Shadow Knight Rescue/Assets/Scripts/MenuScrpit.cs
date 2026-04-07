@@ -29,13 +29,13 @@ public class MenuScrpit : MonoBehaviour
         //if (GameObject.FindGameObjectWithTag)
 
     }
-    public void Lore()
+    public void PlayStory()
     {
-        SceneManager.LoadScene("Lore");
+        SceneManager.LoadScene("Story");
     }
     public void TrueLore()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("True Story");
     }
     public void PlayGame()
     {
