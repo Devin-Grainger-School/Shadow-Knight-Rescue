@@ -1,40 +1,50 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuScrpit : MonoBehaviour
 {
-    public bool isGameActive;
+    public bool isMenu;
+    public bool isGame;
     public TextMeshProUGUI gameOverText;
     
     private void Start()
     {
         
     }
-    public void GameOver()
-    {
-        gameOverText.gameObject.SetActive(true);
-        isGameActive = false;
-    }
+    
     private void Update()
     {
+        //Starts the true game
         if (Input.GetKeyDown(KeyCode.P))
         {
             TrueLore();
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        //Ends Game
+        if (Input.GetKeyDown(KeyCode.Escape) && isMenu)
         {
             doExitGame();
         }
-        //if (GameObject.FindGameObjectWithTag)
+        if (Input.GetKeyDown(KeyCode.Escape) && isGame)
+        {
+            SceneManager.LoadScene("TitleScreen");
+        }
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            doGameOver();
+        }
+
 
     }
     public void PlayStory()
     {
+        //States the Lore to the Player
         SceneManager.LoadScene("Story");
     }
     public void TrueLore()
     {
+        //States the true story to the player
         SceneManager.LoadScene("True Story");
     }
     public void PlayGame()
@@ -49,5 +59,8 @@ public class MenuScrpit : MonoBehaviour
     {
         Application.Quit();
     }
-
+    public void doGameOver()
+    {
+        SceneManager.LoadScene("True Game Over");
+    }
 }
