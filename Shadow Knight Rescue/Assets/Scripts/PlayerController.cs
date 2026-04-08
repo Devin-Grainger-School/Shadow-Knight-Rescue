@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject projectilePrefab;
 
+    public GameObject TextBox;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,17 +38,34 @@ public class PlayerController : MonoBehaviour
         }
         if (transform.position.y < -2)
         {
-            transform.position = new Vector3(transform.position.x, -2, transform.position.z);
+            //transform.position = new Vector3(transform.position.x, -2, transform.position.z);
         }
         if (transform.position.y > 20)
         {
             transform.position = new Vector3(transform.position.x, 20, transform.position.z);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            // Launch a projectile from the player
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            //horizontalInput = "false";
+        }
+    }
+        //Text Box opens
+        public void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.name == "PAge_0")
+        {
+            Debug.Log("Can interact.");
+            TextBox.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                TextBox.SetActive(false);
+            }
+        }
+        if (collision.gameObject.name == "Leave")
+        {
+            Debug.Log("Can interact.");
+            TextBox.SetActive(false);
         }
     }
 }
