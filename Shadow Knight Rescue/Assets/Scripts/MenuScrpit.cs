@@ -8,7 +8,8 @@ public class MenuScrpit : MonoBehaviour
     public bool isMenu;
     public bool isGame;
     public TextMeshProUGUI gameOverText;
-    
+    public GameObject livecharac;
+
     private void Start()
     {
         
@@ -30,7 +31,7 @@ public class MenuScrpit : MonoBehaviour
         {
             SceneManager.LoadScene("TitleScreen");
         }
-        if (Input.GetKeyDown(KeyCode.G))
+        if (!livecharac || Input.GetKeyDown(KeyCode.G))
         {
             doGameOver();
         }

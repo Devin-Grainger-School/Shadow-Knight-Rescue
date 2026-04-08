@@ -30,7 +30,7 @@ public class Text : MonoBehaviour
             KeyButton.SetActive(false);
         }
         //Opens text box
-        if (collision.gameObject.name == "Shadow Knight" && !Talked && Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Space) && collision.gameObject.name == "Shadow Knight")
         {
             Debug.Log("Can interact.");
             TextBox.SetActive(true);
