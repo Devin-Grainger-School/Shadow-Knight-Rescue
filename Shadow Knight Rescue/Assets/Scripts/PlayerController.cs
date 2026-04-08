@@ -50,22 +50,5 @@ public class PlayerController : MonoBehaviour
             //horizontalInput = "false";
         }
     }
-        //Text Box opens
-        public void OnTriggerEnter(Collider collision)
-    {
-        if (collision.gameObject.name == "PAge_0")
-        {
-            Debug.Log("Can interact.");
-            TextBox.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                TextBox.SetActive(false);
-            }
-        }
-        if (collision.gameObject.name == "Leave")
-        {
-            Debug.Log("Can interact.");
-            TextBox.SetActive(false);
-        }
-    }
+        
 }
