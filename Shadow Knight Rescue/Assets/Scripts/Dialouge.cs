@@ -6,6 +6,7 @@ public class Text : MonoBehaviour
     public GameObject TextBox;
     public GameObject KeyButton;
     public bool Talked;
+    public bool Button;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +16,24 @@ public class Text : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Make interact button disappear
+        if (Talked)
+        {
+            KeyButton.SetActive(false);
+        }
+        //Closes text box
+        if (Talked && Input.GetKeyDown(KeyCode.Z))
+        {
+            Debug.Log("Close.");
+            TextBox.SetActive(false);
+        }
+        //Opens text box
+        if (Input.GetKeyDown(KeyCode.Z) && Button)
+        {
+            Debug.Log("Open.");
+            TextBox.SetActive(true);
+            Talked = true;
+        }
         
     }
     public void OnTriggerEnter(Collider collision)
@@ -23,24 +42,8 @@ public class Text : MonoBehaviour
         if (collision.gameObject.name == "Shadow Knight" && !Talked)
         {
             KeyButton.SetActive(true);
+            Button = true;
         }
-        //Make interact button disappear
-        if (collision.gameObject.name == "Shadow Knight" && Talked)
-        {
-            KeyButton.SetActive(false);
-        }
-        //Opens text box
-        if (Input.GetKeyDown(KeyCode.Space) && collision.gameObject.name == "Shadow Knight")
-        {
-            Debug.Log("Can interact.");
-            TextBox.SetActive(true);
-            Talked = true;
-        }
-        //Closes text box
-        if (collision.gameObject.name == "Shadow Knight" && Talked && Input.GetKeyDown(KeyCode.Z))
-        {
-            Debug.Log("Can interact.");
-            TextBox.SetActive(false);
-        }
+        
     }
 }
