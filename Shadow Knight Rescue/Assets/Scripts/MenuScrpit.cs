@@ -62,6 +62,6 @@ public class MenuScrpit : MonoBehaviour
     }
     public void doGameOver()
     {
-        SceneManager.LoadScene("True Game Over");
+        SceneManager.LoadScene("Game Over");
     }
 }
