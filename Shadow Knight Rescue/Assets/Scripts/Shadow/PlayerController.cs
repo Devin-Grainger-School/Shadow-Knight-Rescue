@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         // Horizontal Movement Buttons for the Player
         horizontalInput = Input.GetAxis("Horizontal");
         // Horizontal Movement for the Player
-        playerRb.AddForce(Vector2.right * horizontalInput * Time.deltaTime * speed);
+        transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
         // Jump
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
