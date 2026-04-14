@@ -4,7 +4,9 @@ using UnityEngine;
 public class SluggerCharge : MonoBehaviour
 {
     public int Slugger;
-    
+    public int Lambs;
+    public int Nightingales;
+
     public GameObject[] SluggerPrefabs;
     public GameObject UpSlugger;
     public GameObject DownSlugger;
