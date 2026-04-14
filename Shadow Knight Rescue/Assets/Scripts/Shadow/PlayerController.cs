@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
     public float verticalInput;
-    public float speed = 15.0f;
+    public float speed = 1500.0f;
     public float jumpForce = 10;
     public float xRange = 20;
 
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        Physics.gravity *= gravityModifier;
+        //Physics.gravity *= gravityModifier;
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         // Horizontal Movement Buttons for the Player
         horizontalInput = Input.GetAxis("Horizontal");
         // Horizontal Movement for the Player
-        transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
+        playerRb.AddForce(Vector2.right * horizontalInput * Time.deltaTime * speed);
         // Jump
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {

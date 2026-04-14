@@ -147,10 +147,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8207853611233027987}
   - component: {fileID: 8271839503499641023}
+  - component: {fileID: 6435053455241561105}
   - component: {fileID: 9157356502462308624}
   - component: {fileID: 1200402096757311120}
   - component: {fileID: 1797434771580967167}
-  - component: {fileID: 6435053455241561105}
   - component: {fileID: 8294113001212671887}
   - component: {fileID: 6289426055001734332}
   - component: {fileID: 447106073303774539}
@@ -235,6 +235,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6435053455241561105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583861909352498086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb8baece9e7e7984a97fb9e1570e8df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: 0
+  verticalInput: 0
+  speed: 15
+  jumpForce: 10
+  xRange: 20
+  projectilePrefab: {fileID: 0}
+  gravityModifier: 0
+  isOnGround: 1
+  TextBox: {fileID: 0}
 --- !u!65 &9157356502462308624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -306,24 +327,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &6435053455241561105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5583861909352498086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8baece9e7e7984a97fb9e1570e8df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalInput: 0
-  verticalInput: 0
-  speed: 15
-  xRange: 20
-  projectilePrefab: {fileID: 0}
-  TextBox: {fileID: 0}
 --- !u!65 &8294113001212671887
 BoxCollider:
   m_ObjectHideFlags: 0
