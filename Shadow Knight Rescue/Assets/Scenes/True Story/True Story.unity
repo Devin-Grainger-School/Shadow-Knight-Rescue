@@ -586,7 +586,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 0
+  TrueStory: 0
   gameOverText: {fileID: 0}
+  livecharac: {fileID: 0}
 --- !u!114 &457925209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +635,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 457925208}
         m_TargetAssemblyTypeName: MenuScrpit, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: PlayTrueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2116,7 +2118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 0
+  TrueStory: 0
   gameOverText: {fileID: 0}
+  livecharac: {fileID: 0}
 --- !u!4 &1845650110
 Transform:
   m_ObjectHideFlags: 0
@@ -2163,7 +2167,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 1
+  TrueStory: 1
   gameOverText: {fileID: 0}
+  livecharac: {fileID: 1505855809}
 --- !u!4 &1845882171
 Transform:
   m_ObjectHideFlags: 0

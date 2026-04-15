@@ -5,8 +5,10 @@ public class Text : MonoBehaviour
 {
     public GameObject TextBox;
     public GameObject KeyButton;
+    public GameObject BackupText;
     public bool Talked;
     public bool Button;
+    public bool isPlayerInRange = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,19 +23,24 @@ public class Text : MonoBehaviour
         {
             KeyButton.SetActive(false);
         }
-        //Closes text box
-        if (Talked && Input.GetKeyDown(KeyCode.Z))
+        
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            Debug.Log("Close.");
-            TextBox.SetActive(false);
+            //Closes text box
+            if (Talked)
+            {
+                Debug.Log("Close.");
+                TextBox.SetActive(false);
+            }
+            //Opens text box
+            if (isPlayerInRange && !Talked)
+            {
+                Debug.Log("Open.");
+                TextBox.SetActive(true);
+                Talked = true;
+            }
         }
-        //Opens text box
-        if (Input.GetKeyDown(KeyCode.Z) && Button)
-        {
-            Debug.Log("Open.");
-            TextBox.SetActive(true);
-            Talked = true;
-        }
+        
         
     }
     public void OnTriggerEnter(Collider collision)
@@ -41,9 +48,19 @@ public class Text : MonoBehaviour
         //MAkes interact button appear
         if (collision.gameObject.name == "Shadow Knight" && !Talked)
         {
-            KeyButton.SetActive(true);
-            Button = true;
+                isPlayerInRange = true;
+                KeyButton.SetActive(true);
+                BackupText.SetActive(true);
+                Button = true;
         }
         
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInRange = false;
+            KeyButton.SetActive(false);
+        }
     }
 }

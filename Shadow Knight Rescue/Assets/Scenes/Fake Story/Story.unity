@@ -462,6 +462,7 @@ MonoBehaviour:
   isMenu: 0
   isGame: 1
   gameOverText: {fileID: 0}
+  livecharac: {fileID: 1071595874}
 --- !u!4 &411359259
 Transform:
   m_ObjectHideFlags: 0
@@ -846,6 +847,7 @@ MonoBehaviour:
   isMenu: 0
   isGame: 0
   gameOverText: {fileID: 0}
+  livecharac: {fileID: 0}
 --- !u!114 &829220337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2198,6 +2200,7 @@ MonoBehaviour:
   isMenu: 0
   isGame: 0
   gameOverText: {fileID: 0}
+  livecharac: {fileID: 0}
 --- !u!4 &1845650110
 Transform:
   m_ObjectHideFlags: 0

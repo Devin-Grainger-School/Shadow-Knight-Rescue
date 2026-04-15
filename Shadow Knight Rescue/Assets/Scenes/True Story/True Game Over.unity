@@ -453,7 +453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 1
+  TrueStory: 1
   gameOverText: {fileID: 0}
+  livecharac: {fileID: 1448047646}
 --- !u!4 &1367678153
 Transform:
   m_ObjectHideFlags: 0

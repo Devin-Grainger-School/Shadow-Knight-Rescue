@@ -1239,6 +1239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Slugger: 0
+  Lambs: 0
+  Nightingales: 0
   SluggerPrefabs: []
   UpSlugger: {fileID: 470827366894691317, guid: ab8b21851457b424081a7b00feed46c1, type: 3}
   DownSlugger: {fileID: 8633320698725864853, guid: 1577d9dfd9d38ca4a9608de9307ebe86, type: 3}
@@ -2602,7 +2604,7 @@ GameObject:
   - component: {fileID: 1984567553}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
