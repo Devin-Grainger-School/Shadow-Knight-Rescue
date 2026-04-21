@@ -2,10 +2,7 @@ using UnityEngine;
 
 public class ButtonsWall : MonoBehaviour
 {
-    public bool Button1;
-    public bool Button1Pushed = false;
-    public GameObject button1;
-    public GameObject button1Pushed;
+    
     public bool Button2;
     public bool Button2Pushed = false;
     public GameObject button2;

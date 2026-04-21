@@ -36,23 +36,7 @@ public class PlayerController : MonoBehaviour
             isOnGround = false;
         }
 
-        // Keeping Player in the box
-        if (transform.position.x < -20)
-        {
-            transform.position = new Vector3(-20, transform.position.y, transform.position.z);
-        }
-        if (transform.position.x > 20)
-        {
-            transform.position = new Vector3(20, transform.position.y, transform.position.z);
-        }
-        if (transform.position.y < -2)
-        {
-            //transform.position = new Vector3(transform.position.x, -2, transform.position.z);
-        }
-        if (transform.position.y > 20)
-        {
-            transform.position = new Vector3(transform.position.x, 20, transform.position.z);
-        }
+        
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
