@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6299639311992738712}
   - component: {fileID: 5199270235591316414}
   - component: {fileID: 2500042480410708982}
+  - component: {fileID: 1566832371851267558}
+  - component: {fileID: 4533410831469832752}
   m_Layer: 0
   m_Name: Shadow Lamb
   m_TagString: Lamb
@@ -132,8 +134,41 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!65 &1566832371851267558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2903527170936737761}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.5399995, y: 6.4199996, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4533410831469832752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2903527170936737761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de225982b46fe8a4a8923ae2fc7f0dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

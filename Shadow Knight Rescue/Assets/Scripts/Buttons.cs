@@ -26,26 +26,34 @@ public class Buttons : MonoBehaviour
     {
         
     }
-    public void OnTriggerEnter(Collider collision)
+    public void OnTriggerStay(Collider collision)
     {
         //
-        if (collision.gameObject.name == "Shadow Knight" || collision.gameObject.name == "Shadow Lamb" && Button1)
+        if (collision.gameObject.name == "Shadow Knight" || gameObject.name == "Shadow Lamb" && Button1)
         {
                 isPlayerInRange = true;
-                Debug.Log("Pushed");
+                Debug.Log("Enabled");
                 door.SetActive(false);
-                //button1.SetActive(false);
-                //button1Pushed.SetActive(true);
+                button1.SetActive(false);
+                button1Pushed.SetActive(true);
+        }
+        else
+        {
+                isPlayerInRange = false;
+                Debug.Log("Disabled");
+                door.SetActive(true);
+                button1.SetActive(true);
+                button1Pushed.SetActive(false);
         }
         
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider collision)
     {
-        if (gameObject.name == "Shadow Knight" || gameObject.name == "Shadow Lamb" && Button1)
+        if (collision.gameObject.name == "Shadow Knight" || gameObject.name == "Shadow Lamb")
         {
-            isPlayerInRange = false;
-            Debug.Log("Pushed");
-            door.SetActive(true);
+            //isPlayerInRange = false;
+            //Debug.Log("Disabled");
+            //door.SetActive(true);
             //button1.SetActive(true);
             //button1Pushed.SetActive(false);
         }

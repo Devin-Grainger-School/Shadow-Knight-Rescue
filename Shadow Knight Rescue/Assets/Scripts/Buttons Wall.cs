@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class ButtonsWall : MonoBehaviour
 {
+    public bool Button1;
+    public bool Button1Pushed = false;
+    public GameObject button1;
+    public GameObject button1Pushed;
     public bool Button2;
     public bool Button2Pushed = false;
     public GameObject button2;
@@ -20,21 +24,22 @@ public class ButtonsWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Wall Button
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
-        {
-            button2.SetActive(false);
-            button2Pushed.SetActive(true);
-            Button2Pushed = true;
-            door.SetActive(false);
-        }
-        if (isPlayerInRange && Button2Pushed && Input.GetKeyDown(KeyCode.Z))
+        if (isPlayerInRange && !door && Input.GetKeyDown(KeyCode.Z))
         {
             door.SetActive(true);
             button2.SetActive(true);
             button2Pushed.SetActive(false);
             Button2Pushed = false;
         }
+        //Wall Button
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
+        {
+            button2.SetActive(false);
+            button2Pushed.SetActive(true);
+            door.SetActive(false);
+            Button2Pushed = true;
+        }
+        
     }
     public void OnTriggerEnter(Collider collision)
     {
