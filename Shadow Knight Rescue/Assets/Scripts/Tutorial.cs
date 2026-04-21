@@ -37,16 +37,16 @@ public class Tutorial : MonoBehaviour
         //States the Lore to the Player
         SceneManager.LoadScene("Level T-0");
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             isPlayerInRange = true;
         }
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             isPlayerInRange = false;
         }

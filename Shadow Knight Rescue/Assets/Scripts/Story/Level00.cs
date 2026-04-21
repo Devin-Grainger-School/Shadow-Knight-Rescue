@@ -67,9 +67,9 @@ public class Level00 : MonoBehaviour
         }
 
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider collision)
     {
-        if (gameObject.name == "Shadow Knight")
+        if (collision.gameObject.name == "Shadow Knight")
         {
             isPlayerInRange = false;
             TextBox.SetActive(false);
