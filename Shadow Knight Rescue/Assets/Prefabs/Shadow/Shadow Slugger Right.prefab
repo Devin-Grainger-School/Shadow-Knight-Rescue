@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 2998041878817657957}
   m_Layer: 0
   m_Name: Shadow Slugger Right
-  m_TagString: Untagged
+  m_TagString: Sluggers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

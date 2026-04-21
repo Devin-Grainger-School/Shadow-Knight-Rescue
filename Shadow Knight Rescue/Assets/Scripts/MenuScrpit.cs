@@ -32,11 +32,11 @@ public class MenuScrpit : MonoBehaviour
         {
             SceneManager.LoadScene("TitleScreen");
         }
-        if (!livecharac && TrueStory || Input.GetKeyDown(KeyCode.G))
+        if (!livecharac && TrueStory && isGame || Input.GetKeyDown(KeyCode.G))
         {
             doTrueGameOver();
         }
-        else if (!livecharac || Input.GetKeyDown(KeyCode.G))
+        else if (!livecharac && isGame || Input.GetKeyDown(KeyCode.G))
         {
             doGameOver();
         }
@@ -54,7 +54,7 @@ public class MenuScrpit : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("Level 0-1");
+        SceneManager.LoadScene("Level 0-0");
     }
     public void PlayTrueGame()
     {

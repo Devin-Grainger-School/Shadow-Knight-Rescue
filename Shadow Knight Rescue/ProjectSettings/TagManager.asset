@@ -8,6 +8,9 @@ TagManager:
   - Monster
   - Wall
   - Ground
+  - Sluggers
+  - Lamb
+  - Nightingale
   layers:
   - Default
   - TransparentFX

@@ -237,6 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 0
+  TrueStory: 0
   gameOverText: {fileID: 0}
   livecharac: {fileID: 0}
 --- !u!4 &193102971
@@ -743,6 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 0
+  TrueStory: 0
   gameOverText: {fileID: 0}
   livecharac: {fileID: 0}
 --- !u!114 &804344822
@@ -1532,8 +1534,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 1
   isGame: 0
+  TrueStory: 0
   gameOverText: {fileID: 0}
-  livecharac: {fileID: 1430678046}
+  livecharac: {fileID: 193102969}
 --- !u!4 &980803733
 Transform:
   m_ObjectHideFlags: 0

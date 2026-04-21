@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level01 : MonoBehaviour
 {
@@ -12,5 +13,18 @@ public class Level01 : MonoBehaviour
     void Update()
     {
         
+    }
+    public void OnTriggerEnter(Collider collision)
+    {
+        if (gameObject.name == "Shadow Knight")
+        {
+            DemoEnd();
+        }
+        
+    }
+    public void DemoEnd()
+    {
+        //States the Lore to the Player
+        SceneManager.LoadScene("Demo End");
     }
 }

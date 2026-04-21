@@ -53,6 +53,17 @@ public class SluggerCharge : MonoBehaviour
                 Instantiate(RightSlugger, transform.position, RightSlugger.transform.rotation);
                 //Slugger++;
             }
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                if (gameObject.name == "Shadow Lamb")
+                {
+                    Destroy(Lamb);
+                }
+                else
+                {
+                    Instantiate(Lamb, transform.position, Lamb.transform.rotation);
+                }
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ public class Level00 : MonoBehaviour
     public bool Dungon;
 
     public GameObject TextBox;
+    public bool isPlayerInRange = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,19 +18,19 @@ public class Level00 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TrueStory && TutorialTree && TextBox && Input.GetKeyDown(KeyCode.Z))
+        if (TrueStory && TutorialTree && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
         {
             LevelTT();
         }
-        else if (TutorialTree && TextBox && Input.GetKeyDown(KeyCode.Z))
+        else if (TutorialTree && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
         {
             Level0T();
         }
-        if (TrueStory && Dungon && TextBox && Input.GetKeyDown(KeyCode.Z))
+        if (TrueStory && Dungon && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
         {
             LevelT1();
         }
-        else if (Dungon && TextBox && Input.GetKeyDown(KeyCode.Z))
+        else if (Dungon && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
         {
             Level01();
         }
@@ -56,5 +57,23 @@ public class Level00 : MonoBehaviour
         //States the Lore to the Player
         SceneManager.LoadScene("Level T-1");
     }
-    
+    public void OnTriggerEnter(Collider collision)
+    {
+        //
+        if (collision.gameObject.name == "Shadow Knight")
+        {
+            isPlayerInRange = true;
+            TextBox.SetActive(true);
+        }
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (gameObject.name == "Shadow Knight")
+        {
+            isPlayerInRange = false;
+            TextBox.SetActive(false);
+        }
+    }
+
 }

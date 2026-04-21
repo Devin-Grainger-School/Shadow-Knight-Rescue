@@ -1320,7 +1320,7 @@ MonoBehaviour:
 
     Z is to interact
 
-    QWSE
+    ijkl
     Throws Attacks
 
     Mouse buttons throw Shadow Animal Constructs
@@ -2012,8 +2012,8 @@ MonoBehaviour:
   DownSlugger: {fileID: 8633320698725864853, guid: 1577d9dfd9d38ca4a9608de9307ebe86, type: 3}
   LeftSlugger: {fileID: 2860629999098880597, guid: 0976d14b18a5ddd4191d549444f3fedd, type: 3}
   RightSlugger: {fileID: 3763256518047391949, guid: e5ceea585b6c8864e9cc424888f3b2c0, type: 3}
-  Lamb: {fileID: 0}
-  Nightingale: {fileID: 0}
+  Lamb: {fileID: 2903527170936737761, guid: 7eb774abd26741c4eb92a4045718c62c, type: 3}
+  Nightingale: {fileID: 1726173043105146276, guid: 0e23577b5fa5c434fb5b11baa6d97ac1, type: 3}
   ProjectileTag: 
 --- !u!1 &1068468138
 GameObject:
