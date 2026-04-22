@@ -17,7 +17,7 @@ public class Walls : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Slugger"))
+        if (other.CompareTag("Sluggers"))
         {
             Destroy(other.gameObject);
             SluggerCharge.Slugger--;

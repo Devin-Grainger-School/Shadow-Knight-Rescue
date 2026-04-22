@@ -14,9 +14,9 @@ public class SluggerDetectCollisions : MonoBehaviour
             Destroy(other.gameObject);
             
         }
-        if (other.CompareTag("Wall"))
+        if (other.CompareTag("Ground"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
             //GameObject.Find("SluggerCharge").GetComponent<SluggerCharge>().Slugger - 1;
 
         }
