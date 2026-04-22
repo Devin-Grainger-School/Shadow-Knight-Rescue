@@ -14,7 +14,7 @@ public class SluggerDetectCollisions : MonoBehaviour
             Destroy(other.gameObject);
             
         }
-        if (other.CompareTag("Respawn"))
+        if (other.CompareTag("Wall"))
         {
             Destroy(gameObject);
             //GameObject.Find("SluggerCharge").GetComponent<SluggerCharge>().Slugger - 1;

@@ -22,7 +22,7 @@ public class TextBox : MonoBehaviour
         if (collision.gameObject.name == "Shadow Knight")
         {
             isPlayerInRange = true;
-            TextBox.SetActive(true);
+            Text.SetActive(true);
         }
 
     }
@@ -31,7 +31,7 @@ public class TextBox : MonoBehaviour
         if (collision.gameObject.name == "Shadow Knight")
         {
             isPlayerInRange = false;
-            TextBox.SetActive(false);
+            Text.SetActive(false);
         }
     }
 
