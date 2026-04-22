@@ -29,25 +29,25 @@ public class SluggerCharge : MonoBehaviour
         {
 
             //Shadow
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 // Launch a projectile from the player up
                 Instantiate(UpSlugger, transform.position, UpSlugger.transform.rotation);
                 Slugger++;
             }
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.S))
             {
                 // Launch a projectile from the player Down
                 Instantiate(DownSlugger, transform.position, DownSlugger.transform.rotation);
                 Slugger++;
             }
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 // Launch a projectile from the player Left
                 Instantiate(LeftSlugger, transform.position, LeftSlugger.transform.rotation);
                 Slugger++;
             }
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 // Launch a projectile from the player Right
                 Instantiate(RightSlugger, transform.position, RightSlugger.transform.rotation);

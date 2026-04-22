@@ -8,7 +8,6 @@ public class ButtonsWall : MonoBehaviour
     public GameObject button2;
     public GameObject button2Pushed;
 
-    public bool Door;
     public GameObject door;
 
     public bool isPlayerInRange = false;

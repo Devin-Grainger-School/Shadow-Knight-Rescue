@@ -16,7 +16,7 @@ public class Level01 : MonoBehaviour
     }
     public void OnTriggerEnter(Collider collision)
     {
-        if (gameObject.name == "Shadow Knight")
+        if (collision.gameObject.name == "Shadow Knight")
         {
             DemoEnd();
         }

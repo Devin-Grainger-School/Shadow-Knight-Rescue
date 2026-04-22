@@ -1053,9 +1053,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2196654804488630555, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
-      propertyPath: button2
+      propertyPath: door
       value: 
       objectReference: {fileID: 97888513}
+    - target: {fileID: 2196654804488630555, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 420553952}
     - target: {fileID: 8018916778785260790, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
       propertyPath: door
       value: 
@@ -1109,6 +1113,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
+--- !u!1 &420553952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7404543001530252388, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
+  m_PrefabInstance: {fileID: 420553951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &466292182
 GameObject:
   m_ObjectHideFlags: 0
