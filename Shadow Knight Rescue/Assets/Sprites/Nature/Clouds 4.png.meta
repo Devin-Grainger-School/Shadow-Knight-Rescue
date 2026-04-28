@@ -163,7 +163,7 @@ TextureImporter:
         width: 674
         height: 268
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,7 +185,7 @@ TextureImporter:
         width: 443
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,11 +198,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Clouds 4_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 851
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8d6077f20222542a848c82ae6e78df
+      internalID: 1322983635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: effefce117ef29b4c9e1f5ba3c6fa48b
     internalID: 0
     vertices: []
     indices: 
@@ -214,6 +236,7 @@ TextureImporter:
     nameFileIdTable:
       Clouds 4_0: -5490895532893133968
       Clouds 4_1: -3474008695724671800
+      Clouds 4_2: 1322983635
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
