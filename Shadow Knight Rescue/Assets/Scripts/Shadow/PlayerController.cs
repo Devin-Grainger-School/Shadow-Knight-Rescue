@@ -1,15 +1,20 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
     public float verticalInput;
-    public float speed = 1500.0f;
+    public float speed = 10f;
     public float jumpForce = 10;
     public float xRange = 20;
 
     public GameObject projectilePrefab;
     private Rigidbody playerRb;
+
+    InputAction moveAction;
+    private Vector2 movementVector;
+
     public float gravityModifier;
     public bool isOnGround = true;
 
@@ -20,11 +25,21 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
         //Physics.gravity *= gravityModifier;
+        moveAction = InputSystem.actions.FindAction("Horizontal");
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Spirt Sleeper Movement
+        //movementVector = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        //playerRb.linearVelocity = movementVector.normalized * speed;
+        
+        //Add Force Movement
+        //playerRb.AddForce(movementVector.normalized * speed, ForceMode.Acceleration);
+        //playerRb.AddRelativeForce(movementVector.normalized * speed);
+        
+        //Transform Movement
         // Horizontal Movement Buttons for the Player
         horizontalInput = Input.GetAxis("Horizontal");
         // Horizontal Movement for the Player

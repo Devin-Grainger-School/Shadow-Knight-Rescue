@@ -58,7 +58,7 @@ public class MenuScrpit : MonoBehaviour
     }
     public void PlayTrueGame()
     {
-        SceneManager.LoadScene("Level T-1");
+        SceneManager.LoadScene("Level T-0");
     }
     public void doExitGame()
     {

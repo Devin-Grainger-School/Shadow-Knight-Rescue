@@ -22,6 +22,6 @@ public class Nightingale : MonoBehaviour
     public IEnumerator SelfDestruction()
     {
         yield return new WaitForSeconds(1f);
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

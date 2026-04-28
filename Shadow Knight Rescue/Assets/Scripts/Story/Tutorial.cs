@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Tutorial : MonoBehaviour
 {
     public bool TrueStory;
+    public bool FalseStory;
     public bool Flower;
     public bool isPlayerInRange = false;
 

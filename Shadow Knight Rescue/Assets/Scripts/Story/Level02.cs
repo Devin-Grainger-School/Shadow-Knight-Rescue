@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level01 : MonoBehaviour
+public class Level02 : MonoBehaviour
 {
     public GameObject LevelComplete;
     public GameObject Door1;
@@ -12,16 +12,18 @@ public class Level01 : MonoBehaviour
     public bool isPlayerInRange = false;
     public bool TrueStory;
     public bool FalseStory;
+    public bool Level1Door;
+    public bool Level3Door;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Door1.active == false && Door2.active == false && Door3.active == false)
+        if (!Door1 && !Door2 && !Door3)
         {
             LevelComplete.SetActive(false);
             //Destroy(LevelComplete);
@@ -30,23 +32,29 @@ public class Level01 : MonoBehaviour
         {
             LevelComplete.SetActive(true);
         }
-        //True Level2
-        if (Input.GetKeyDown(KeyCode.Z) && TrueStory && isPlayerInRange)
+        //True Level1
+        if (Level1Door && TrueStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            LevelT2();
+            LevelT1();
         }
-        //Fake Level2
-        else if (Input.GetKeyDown(KeyCode.Z) && FalseStory && isPlayerInRange)
+        //Fake Level1
+        if (Level1Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            Level02();
+            Level01();
+        }
+        //True Level3
+        if (Level3Door && Input.GetKeyDown(KeyCode.Z) && TrueStory && isPlayerInRange)
+        {
+            //LevelT3();
+        }
+        //Fake Level3
+        if (Level3Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
+        {
+            //Level03();
         }
     }
     public void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.name == "Shadow Knight")
-        {
-            //DemoEnd();
-        }
         if (collision.gameObject.name == "Shadow Knight")
         {
             isPlayerInRange = true;
@@ -61,19 +69,14 @@ public class Level01 : MonoBehaviour
             KeyButton.SetActive(false);
         }
     }
-    public void DemoEnd()
+    public void Level01()
     {
-        //Ends the Demo
-        SceneManager.LoadScene("Demo End");
+        //Start Fake Level 1
+        SceneManager.LoadScene("Level 0-1");
     }
-    public void Level02()
+    public void LevelT1()
     {
-        //Start Fake Level 2
-        SceneManager.LoadScene("Level 0-2");
-    }
-    public void LevelT2()
-    {
-        //Start True Level 2
-        SceneManager.LoadScene("Level T-2");
+        //Start True Level 1
+        SceneManager.LoadScene("Level T-1");
     }
 }

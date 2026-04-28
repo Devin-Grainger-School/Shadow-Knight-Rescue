@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Level00 : MonoBehaviour
 {
     public bool TrueStory;
+    public bool FalseStory;
     public bool TutorialTree;
     public bool Dungon;
 
@@ -22,7 +23,7 @@ public class Level00 : MonoBehaviour
         {
             LevelTT();
         }
-        else if (TutorialTree && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
+        else if (TutorialTree && FalseStory && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
         {
             Level0T();
         }
@@ -30,7 +31,7 @@ public class Level00 : MonoBehaviour
         {
             LevelT1();
         }
-        else if (Dungon && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
+        else if (Dungon && FalseStory && TextBox && isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
         {
             Level01();
         }
@@ -38,23 +39,23 @@ public class Level00 : MonoBehaviour
     //Enter Tutorial
     public void Level0T()
     {
-        //States the Lore to the Player
+        //Opens Fake Tutorial
         SceneManager.LoadScene("Level T");
     }
     public void LevelTT()
     {
-        //States the Lore to the Player
+        //Opens True Tutorial
         SceneManager.LoadScene("Tutorial");
     }
     //Enter Level 1
     public void Level01()
     {
-        //States the Lore to the Player
+        //Opens Fake Level 1
         SceneManager.LoadScene("Level 0-1");
     }
     public void LevelT1()
     {
-        //States the Lore to the Player
+        //Opens True Level 1
         SceneManager.LoadScene("Level T-1");
     }
     public void OnTriggerEnter(Collider collision)
