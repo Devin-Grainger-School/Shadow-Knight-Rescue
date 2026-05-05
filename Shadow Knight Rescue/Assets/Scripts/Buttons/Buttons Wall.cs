@@ -28,7 +28,7 @@ public class ButtonsWall : MonoBehaviour
             Button2Pushed = false;
         }
         //Wall Button
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
+        else if (isPlayerInRange && Input.GetKeyDown(KeyCode.Z))
         {
             button2.SetActive(false);
             button2Pushed.SetActive(true);
