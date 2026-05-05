@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     public float jumpForce = 10;
     public float xRange = 20;
+    public float jump = 2;
 
     public GameObject projectilePrefab;
     private Rigidbody playerRb;
@@ -45,10 +46,11 @@ public class PlayerController : MonoBehaviour
         // Horizontal Movement for the Player
         transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
         // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        if (Input.GetKeyDown(KeyCode.Space) && jump != 0)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+            jump--;
         }
 
         
@@ -64,6 +66,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+            jump = 2;
         }
     }
 

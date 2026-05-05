@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 5968748076785995422}
   - component: {fileID: 44608956888426578}
   - component: {fileID: 6655423396003319346}
+  - component: {fileID: 7835283103466342022}
   m_Layer: 0
   m_Name: Circle Monster_0
   m_TagString: Monster
@@ -490,7 +491,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -510,3 +511,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 2
+--- !u!65 &7835283103466342022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134903434767013048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.21, y: 9.94, z: 266.39}
+  m_Center: {x: 0, y: 0, z: 0}

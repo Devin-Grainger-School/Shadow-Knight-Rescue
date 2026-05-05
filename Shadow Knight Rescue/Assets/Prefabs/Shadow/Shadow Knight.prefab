@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 447106073303774539}
   - component: {fileID: 67564578023011765}
   - component: {fileID: 4831389818178731859}
+  - component: {fileID: 1029654419400385872}
   m_Layer: 0
   m_Name: Shadow Knight
   m_TagString: Player
@@ -253,6 +254,7 @@ MonoBehaviour:
   speed: 15
   jumpForce: 10
   xRange: 20
+  jump: 2
   projectilePrefab: {fileID: 0}
   gravityModifier: 0
   isOnGround: 1
@@ -449,6 +451,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9878164, y: 1.612257, z: 1.73}
   m_Center: {x: -1.4035468, y: -0.28999996, z: 0}
+--- !u!114 &1029654419400385872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583861909352498086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde56621cf5806d469c7468cdd8763ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6144897714601824658
 GameObject:
   m_ObjectHideFlags: 0

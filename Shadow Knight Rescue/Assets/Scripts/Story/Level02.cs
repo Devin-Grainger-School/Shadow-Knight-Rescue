@@ -7,6 +7,7 @@ public class Level02 : MonoBehaviour
     public GameObject Door1;
     public GameObject Door2;
     public GameObject Door3;
+    public GameObject Door4;
 
     public GameObject KeyButton;
     public bool isPlayerInRange = false;
@@ -23,7 +24,7 @@ public class Level02 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Door1 && !Door2 && !Door3)
+        if (!Door1 && !Door2 && !Door3 && !Door4)
         {
             LevelComplete.SetActive(false);
             //Destroy(LevelComplete);

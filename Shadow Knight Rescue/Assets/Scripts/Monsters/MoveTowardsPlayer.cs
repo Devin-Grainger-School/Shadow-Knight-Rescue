@@ -6,9 +6,12 @@ public class MoveTowardsPlayer : MonoBehaviour
     public float speed = 2f;
     private float minDistance = 1f;
     private float range;
+    private Rigidbody monsterRb;
+    
     private void Start()
     {
         target = GameObject.Find("Shadow Knight").transform;
+        monsterRb = GetComponent<Rigidbody>();
     }
     void Update()
     {
@@ -16,10 +19,15 @@ public class MoveTowardsPlayer : MonoBehaviour
 
         if (range > minDistance)
         {
-            Debug.Log(range);
+
 
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            //gainmomentum();
         }
+    }
+    void gainmomentum()
+    {
+        monsterRb.AddRelativeForce(target.position * speed, ForceMode.Acceleration);
     }
 
 }
