@@ -3,7 +3,7 @@ using UnityEngine;
 public class BullCharge : MonoBehaviour
 {
     public Transform target;
-    public float speed = 17f;
+    public float speed = 200f;
     private float minDistance = 1f;
     private float range;
     private Rigidbody monsterRb;

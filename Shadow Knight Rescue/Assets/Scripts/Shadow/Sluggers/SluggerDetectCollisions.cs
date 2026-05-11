@@ -12,9 +12,7 @@ public class SluggerDetectCollisions : MonoBehaviour
         if (other.CompareTag("Monster"))
         {
             Debug.Log("HUI");
-            Destroy(other.gameObject);
-
-            
+            Destroy(other.gameObject); 
         }
         if (other.CompareTag("Ground"))
         {

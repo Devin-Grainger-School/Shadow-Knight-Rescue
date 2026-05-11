@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     public float jumpForce = 10;
     public float xRange = 20;
-    public float jump = 2;
+    public float jump = 1;
 
     public GameObject projectilePrefab;
     private Rigidbody playerRb;
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
-            jump = 2;
+            jump = 1;
         }
     }
 

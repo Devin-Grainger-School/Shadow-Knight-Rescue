@@ -26,4 +26,13 @@ public class FireballTarget : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the object the projectile collided with has the "Enemy" tag
+        if (other.CompareTag("Lamb") || other.CompareTag("Ground"))
+        {
+            Debug.Log("Fireball Blocked");
+            Destroy(gameObject);
+        }
+    }
 }
