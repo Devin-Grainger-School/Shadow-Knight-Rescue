@@ -11,6 +11,7 @@ TagManager:
   - Sluggers
   - Lamb
   - Nightingale
+  - Clock
   layers:
   - Default
   - TransparentFX

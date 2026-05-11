@@ -12,7 +12,7 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Health == 0)
+        if (Health <= 0)
         {
             Destroy(gameObject);
         }
@@ -21,8 +21,8 @@ public class GameOver : MonoBehaviour
     {
         if (other.CompareTag("Monster"))
         {
-            //Destroy(gameObject);
-            Health--;
+            //Destroy(other.gameObject);
+            Health -= 1;
         }
     }
 }

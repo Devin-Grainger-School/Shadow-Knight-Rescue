@@ -3597,6 +3597,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4297619895737388174, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5299610021305647454, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: xaxis
       value: 9.5

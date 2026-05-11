@@ -29,7 +29,7 @@ public class FireballTarget : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Check if the object the projectile collided with has the "Enemy" tag
-        if (other.CompareTag("Lamb") || other.CompareTag("Ground"))
+        if (other.CompareTag("Lamb") || other.CompareTag("Ground") || other.CompareTag("Clock"))
         {
             Debug.Log("Fireball Blocked");
             Destroy(gameObject);
