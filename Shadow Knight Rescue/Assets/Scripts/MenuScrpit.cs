@@ -18,6 +18,10 @@ public class MenuScrpit : MonoBehaviour
     
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            Boss();
+        }
         //Starts the true game
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -71,5 +75,9 @@ public class MenuScrpit : MonoBehaviour
     public void doTrueGameOver()
     {
         SceneManager.LoadScene("True Game Over");
+    }
+    public void Boss()
+    {
+        SceneManager.LoadScene("True Cutscene");
     }
 }

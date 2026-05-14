@@ -20,15 +20,14 @@ public class BossHealth : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Slugger"))
+        if (other.CompareTag("Sluggers"))
         {
-            
             Destroy(other.gameObject);
-            Debug.Log("Hit");
+            //Debug.Log("Hit");
             SluggerCharge.Slugger--;
-            Debug.Log("Slugger down");
+            //Debug.Log("Slugger down");
             Health -= 1;
-            Debug.Log("-1");
+            //Debug.Log("-1");
         }
     }
 }
