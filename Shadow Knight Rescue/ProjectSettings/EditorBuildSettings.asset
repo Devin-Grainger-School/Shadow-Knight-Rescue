@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/True Story/Level T-3.unity
     guid: a96b7fbf2b957474cb3378bf7d230ee0
   - enabled: 1
+    path: Assets/Scenes/True Story/True Cutscene.unity
+    guid: 673ce0536470b1142bfa711a3be2d8a8
+  - enabled: 1
+    path: Assets/Scenes/True Story/Level True Boss.unity
+    guid: c4f942d45e323cf4893fdf8201a70880
+  - enabled: 1
     path: Assets/Scenes/True Story/True Game Over.unity
     guid: dac88f94af055324c94a2104a3cac78a
   - enabled: 1
@@ -44,7 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fake Story/Game Over.unity
     guid: f054bb84ae2a59847b4df9e71c328497
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demo End.unity
     guid: ab09841cd431d134e96b1ca2b3c7db47
   m_configObjects:

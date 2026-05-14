@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e3016a9fd54ce4842bf60c663b6cd36e
+guid: f5d9f39e18796d646815ce97b781d89d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7754141085265651594
-    second: Little Girl (Memory) Ghost Pixel Art Walking 2_0
+      213: 1512713914227997360
+    second: Boss Face Side_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +84,59 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -100,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Little Girl (Memory) Ghost Pixel Art Walking 2_0
+      name: Boss Face Side_0
       rect:
         serializedVersion: 2
-        x: 312
-        y: 128
-        width: 391
-        height: 823
+        x: 72
+        y: 0
+        width: 678
+        height: 851
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6789a7224c1c36490800000000000000
-      internalID: -7754141085265651594
+      spriteID: 0bab9505a4d3ef410800000000000000
+      internalID: 1512713914227997360
       vertices: []
       indices: 
       edges: []
@@ -135,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Little Girl (Memory) Ghost Pixel Art Walking 2_0: -7754141085265651594
+      Boss Face Side_0: 1512713914227997360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

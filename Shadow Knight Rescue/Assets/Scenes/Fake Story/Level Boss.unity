@@ -9014,7 +9014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 1
-  TrueStory: 1
+  TrueStory: 0
   gameOverText: {fileID: 0}
   livecharac: {fileID: 907499635}
 --- !u!1 &1295731942
@@ -12734,6 +12734,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 92
       objectReference: {fileID: 0}
+    - target: {fileID: 8271839503499641023, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3724191263448695647, guid: 7d5178442979d1b4ca385cad47a4535e, type: 3}
     - target: {fileID: 8965697887453798357, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: orthographic size
       value: 8.37

@@ -5,7 +5,6 @@ public class Text : MonoBehaviour
 {
     public GameObject TextBox;
     public GameObject KeyButton;
-    public GameObject BackupText;
     public bool Talked;
     public bool Button;
     public bool isPlayerInRange = false;
@@ -50,7 +49,6 @@ public class Text : MonoBehaviour
         {
                 isPlayerInRange = true;
                 KeyButton.SetActive(true);
-                BackupText.SetActive(true);
                 Button = true;
         }
         

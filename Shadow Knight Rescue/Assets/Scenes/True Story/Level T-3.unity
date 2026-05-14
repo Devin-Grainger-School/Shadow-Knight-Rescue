@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 7920754}
   - component: {fileID: 7920753}
   - component: {fileID: 7920758}
-  - component: {fileID: 7920757}
+  - component: {fileID: 7920759}
   m_Layer: 0
   m_Name: Dungon Door_0 (1)
   m_TagString: Untagged
@@ -175,7 +175,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextBox: {fileID: 911793918}
   KeyButton: {fileID: 1393631315}
-  BackupText: {fileID: 0}
   Talked: 0
   Button: 0
   isPlayerInRange: 0
@@ -250,29 +249,6 @@ Transform:
   - {fileID: 1393631317}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7920757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7920752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f0d93c45d36eae4aa23b90db0e22e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelComplete: {fileID: 317991033}
-  Door1: {fileID: 317991033}
-  Door2: {fileID: 317991033}
-  Door3: {fileID: 317991033}
-  Door4: {fileID: 0}
-  KeyButton: {fileID: 317991033}
-  isPlayerInRange: 0
-  TrueStory: 1
-  FalseStory: 0
-  Level1Door: 1
-  Level3Door: 0
 --- !u!114 &7920758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +263,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 911793918}
   isPlayerInRange: 0
+--- !u!114 &7920759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7920752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3703948503d7e42a8ec3313c21f6cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelComplete: {fileID: 0}
+  Door1: {fileID: 0}
+  Door2: {fileID: 0}
+  Door3: {fileID: 0}
+  Door4: {fileID: 0}
+  KeyButton: {fileID: 1393631315}
+  isPlayerInRange: 0
+  TrueStory: 1
+  FalseStory: 0
+  Level2Door: 1
+  Level4Door: 0
 --- !u!1 &23184748
 GameObject:
   m_ObjectHideFlags: 0
@@ -11603,8 +11602,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1607393646}
   - component: {fileID: 1607393645}
-  - component: {fileID: 1607393648}
   - component: {fileID: 1607393647}
+  - component: {fileID: 1607393648}
   m_Layer: 0
   m_Name: Dungon Door_0
   m_TagString: Untagged
@@ -11706,17 +11705,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1607393644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bff9b0718537b47b971ca22f8943b1, type: 3}
+  m_Script: {fileID: 11500000, guid: dd3703948503d7e42a8ec3313c21f6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LevelComplete: {fileID: 836264039}
   Door1: {fileID: 673834416}
   Door2: {fileID: 1089250446}
   Door3: {fileID: 97888513}
+  Door4: {fileID: 1473505155}
   KeyButton: {fileID: 122177524}
   isPlayerInRange: 0
   TrueStory: 1
   FalseStory: 0
+  Level2Door: 0
+  Level4Door: 1
 --- !u!1 &1608721156
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d858c2e901476ca489fcdfd8a886f50c
+guid: 505b7c82e6647eb4e8b744dd94b0da24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2231138113195243194
-    second: Little Girl (Memory) Ghost Pixel Art (Back)_0
+      213: -2314568505552005513
+    second: Boss Face Body_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +84,59 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -100,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Little Girl (Memory) Ghost Pixel Art (Back)_0
+      name: Boss Face Body_0
       rect:
         serializedVersion: 2
-        x: 311
-        y: 158
-        width: 392
-        height: 793
+        x: 0
+        y: 0
+        width: 621
+        height: 564
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 649892605b76901e0800000000000000
-      internalID: -2231138113195243194
+      spriteID: 7761442153001efd0800000000000000
+      internalID: -2314568505552005513
       vertices: []
       indices: 
       edges: []
@@ -135,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Little Girl (Memory) Ghost Pixel Art (Back)_0: -2231138113195243194
+      Boss Face Body_0: -2314568505552005513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public bool TrueStory;
     public int Health = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,7 +16,15 @@ public class GameOver : MonoBehaviour
     {
         if (Health <= 0)
         {
-            Destroy(gameObject);
+            if (TrueStory)
+            {
+                doTrueGameOver();
+            }
+            else
+            {
+                doGameOver();
+            }
+                Destroy(gameObject);
         }
     }
     void OnTriggerEnter(Collider other)
@@ -24,5 +34,13 @@ public class GameOver : MonoBehaviour
             //Destroy(other.gameObject);
             Health -= 1;
         }
+    }
+    public void doGameOver()
+    {
+        SceneManager.LoadScene("Game Over");
+    }
+    public void doTrueGameOver()
+    {
+        SceneManager.LoadScene("True Game Over");
     }
 }

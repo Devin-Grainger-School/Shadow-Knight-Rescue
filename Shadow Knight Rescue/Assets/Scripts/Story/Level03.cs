@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level02 : MonoBehaviour
+public class Level03 : MonoBehaviour
 {
     public GameObject LevelComplete;
     public GameObject Door1;
@@ -13,12 +13,12 @@ public class Level02 : MonoBehaviour
     public bool isPlayerInRange = false;
     public bool TrueStory;
     public bool FalseStory;
-    public bool Level1Door;
-    public bool Level3Door;
+    public bool Level2Door;
+    public bool Level4Door;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -33,25 +33,25 @@ public class Level02 : MonoBehaviour
         {
             LevelComplete.SetActive(true);
         }
-        //True Level1
-        if (Level1Door && TrueStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
+        //True Level2
+        if (Level2Door && TrueStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            LevelT1();
+            LevelT2();
         }
-        //Fake Level1
-        if (Level1Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
+        //Fake Level2
+        if (Level2Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            Level01();
+            Level02();
         }
-        //True Level3
-        if (Level3Door && Input.GetKeyDown(KeyCode.Z) && TrueStory && isPlayerInRange)
+        //True Cutscene
+        if (Level4Door && Input.GetKeyDown(KeyCode.Z) && TrueStory && isPlayerInRange)
         {
-            LevelT3();
+            TCutScene();
         }
-        //Fake Level3
-        if (Level3Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
+        //Fake CutScene
+        if (Level4Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            Level03();
+            CutScene();
         }
     }
     public void OnTriggerEnter(Collider collision)
@@ -70,24 +70,24 @@ public class Level02 : MonoBehaviour
             KeyButton.SetActive(false);
         }
     }
-    public void Level01()
+    public void Level02()
     {
-        //Start Fake Level 1
-        SceneManager.LoadScene("Level 0-1");
+        //Start Fake Level 2
+        SceneManager.LoadScene("Level 0-2");
     }
-    public void LevelT1()
+    public void LevelT2()
     {
-        //Start True Level 1
-        SceneManager.LoadScene("Level T-1");
+        //Start True Level 2
+        SceneManager.LoadScene("Level T-2");
     }
-    public void Level03()
+    public void CutScene()
     {
-        //Start Fake Level 1
-        SceneManager.LoadScene("Level 0-3");
+        //Start Fake Cutscene
+        SceneManager.LoadScene("Cutscene");
     }
-    public void LevelT3()
+    public void TCutScene()
     {
-        //Start True Level 1
-        SceneManager.LoadScene("Level T-3");
+        //Start True Cutscene
+        SceneManager.LoadScene("True Cutscene");
     }
 }

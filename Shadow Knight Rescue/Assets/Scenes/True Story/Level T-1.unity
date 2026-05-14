@@ -3541,7 +3541,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextBox: {fileID: 1418561025}
   KeyButton: {fileID: 1393631315}
-  BackupText: {fileID: 1418561025}
   Talked: 0
   Button: 0
   isPlayerInRange: 0
@@ -5112,7 +5111,7 @@ Transform:
   m_GameObject: {fileID: 1387251778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 4.6, z: 0}
+  m_LocalPosition: {x: 29.8, y: 4.6, z: 0}
   m_LocalScale: {x: 1, y: 93.4, z: 141.78}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7397,7 +7396,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextBox: {fileID: 1418561025}
   KeyButton: {fileID: 1393631315}
-  BackupText: {fileID: 1418561025}
   Talked: 0
   Button: 0
   isPlayerInRange: 0

@@ -3286,7 +3286,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextBox: {fileID: 1418561025}
   KeyButton: {fileID: 1393631315}
-  BackupText: {fileID: 1418561025}
   Talked: 0
   Button: 0
   isPlayerInRange: 0
@@ -6076,6 +6075,10 @@ PrefabInstance:
       value: Shadow Knight
       objectReference: {fileID: 0}
     - target: {fileID: 6435053455241561105, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: jump
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435053455241561105, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: speed
       value: 15
       objectReference: {fileID: 0}
@@ -6640,7 +6643,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextBox: {fileID: 1418561025}
   KeyButton: {fileID: 1393631315}
-  BackupText: {fileID: 1418561025}
   Talked: 0
   Button: 0
   isPlayerInRange: 0

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class CannonFire : MonoBehaviour
+public class BossFire : MonoBehaviour
 {
     public GameObject FireBall;
     public bool Fires;
@@ -22,7 +22,7 @@ public class CannonFire : MonoBehaviour
     {
         while (true)
         {
-            rSec = Random.Range(2, 5);
+            rSec = Random.Range(1, 3);
             yield return new WaitForSeconds(rSec);
             Fire();
         }
@@ -31,6 +31,6 @@ public class CannonFire : MonoBehaviour
     void Fire()
     {
         Instantiate(FireBall, transform.position, FireBall.transform.rotation);
-        
+
     }
 }
