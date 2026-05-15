@@ -12,6 +12,7 @@ TagManager:
   - Lamb
   - Nightingale
   - Clock
+  - Bull
   layers:
   - Default
   - TransparentFX

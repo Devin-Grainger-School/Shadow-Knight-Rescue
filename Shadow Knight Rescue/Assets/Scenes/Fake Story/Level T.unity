@@ -3533,12 +3533,13 @@ MonoBehaviour:
 
     Space Bar to Jump
 
-    Z is to interact
+    Z is to Press buttons and
+    enter levels
 
-    QWES
-    Throws Attacks
+    QWES Throws Attacks
 
-    Mouse buttons throw Shadow Animal Constructs
+    Mouse buttons throw Shadow Animal
+    Constructs
 
 '
   m_isRightToLeft: 0
@@ -3801,7 +3802,6 @@ GameObject:
   m_Component:
   - component: {fileID: 650284591}
   - component: {fileID: 650284590}
-  - component: {fileID: 650284592}
   m_Layer: 0
   m_Name: Trees
   m_TagString: Untagged
@@ -3853,18 +3853,6 @@ Transform:
   - {fileID: 388345371}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &650284592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650284589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c3ee4df4d79f864db20dca8a6ac9310, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &655971147
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,7 +6005,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183007361}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2b92609b6003364eb61638c99f23675, type: 3}
   m_Name: 
@@ -6432,7 +6420,7 @@ Transform:
   m_GameObject: {fileID: 1332285731}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -21.4, z: 0}
+  m_LocalPosition: {x: 0.00000011920929, y: -20.38, z: 0}
   m_LocalScale: {x: 0.5294, y: 0.5294, z: 0.5294}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8437,6 +8425,10 @@ PrefabInstance:
       propertyPath: negxaxis
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 5299610021305647454, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: LevelComplete
+      value: 
+      objectReference: {fileID: 650284589}
     - target: {fileID: 5583861909352498086, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: m_Name
       value: Shadow Knight
@@ -9771,7 +9763,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1940075366}
   - component: {fileID: 1940075365}
-  - component: {fileID: 1940075364}
   m_Layer: 0
   m_Name: Trees (1)
   m_TagString: Untagged
@@ -9779,18 +9770,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1940075364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940075363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c3ee4df4d79f864db20dca8a6ac9310, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1940075365
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -3588,6 +3588,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5586162192901059841, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f626f312ee7ed8543a4a6b86cad0d1be, type: 2}
     - target: {fileID: 5999877696184059126, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: door
       value: 
@@ -8261,6 +8265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bull Monster_0
       objectReference: {fileID: 0}
+    - target: {fileID: 9076556670600598645, guid: 69bd1bc8413660940908a59bd2c4215e, type: 3}
+      propertyPath: m_TagString
+      value: Bull
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9504,6 +9512,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1029654419400385872, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: Health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029654419400385872, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: TrueStory
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3661532799694917881, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: m_IsActive
       value: 1

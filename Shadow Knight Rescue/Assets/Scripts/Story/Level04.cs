@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level03 : MonoBehaviour
+public class Level04 : MonoBehaviour
 {
     public GameObject LevelComplete;
+    public GameObject Door1;
     public GameObject Door2;
     public GameObject Door3;
     public GameObject Door4;
@@ -23,7 +24,7 @@ public class Level03 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Door2.active == false && Door3.active == false && Door4.active == false)
+        if (Door1.active == false && Door2.active == false && Door3.active == false && Door4.active == false)
         {
             LevelComplete.SetActive(false);
             //Destroy(LevelComplete);
@@ -32,25 +33,25 @@ public class Level03 : MonoBehaviour
         {
             LevelComplete.SetActive(true);
         }
-        //True Level2
+        //True Level3
         if (Level3Door && TrueStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            LevelT2();
+            LevelT3();
         }
-        //Fake Level2
+        //Fake Level3
         if (Level3Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            Level02();
+            Level03();
         }
         //True Cutscene
         if (Level5Door && Input.GetKeyDown(KeyCode.Z) && TrueStory && isPlayerInRange)
         {
-            LevelT4();
+            TCutScene();
         }
         //Fake CutScene
         if (Level5Door && FalseStory && Input.GetKeyDown(KeyCode.Z) && isPlayerInRange)
         {
-            Level4();
+            CutScene();
         }
     }
     public void OnTriggerEnter(Collider collision)
@@ -69,24 +70,24 @@ public class Level03 : MonoBehaviour
             KeyButton.SetActive(false);
         }
     }
-    public void Level02()
+    public void Level03()
     {
-        //Start Fake Level 2
-        SceneManager.LoadScene("Level 0-2");
+        //Start Fake Level 3
+        SceneManager.LoadScene("Level 0-3");
     }
-    public void LevelT2()
+    public void LevelT3()
     {
-        //Start True Level 2
-        SceneManager.LoadScene("Level T-2");
+        //Start True Level 3
+        SceneManager.LoadScene("Level T-3");
     }
-    public void Level4()
+    public void CutScene()
     {
         //Start Fake Cutscene
-        SceneManager.LoadScene("Level 0-4");
+        SceneManager.LoadScene("Cutscene");
     }
-    public void LevelT4()
+    public void TCutScene()
     {
         //Start True Cutscene
-        SceneManager.LoadScene("Level T-4");
+        SceneManager.LoadScene("True Cutscene");
     }
 }

@@ -15,6 +15,6 @@ public class Damage : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         Hurt.SetActive(false);
-        StartCoroutine("Hurts");
+        
     }
 }

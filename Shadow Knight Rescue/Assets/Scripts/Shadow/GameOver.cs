@@ -34,6 +34,10 @@ public class GameOver : MonoBehaviour
             //Destroy(other.gameObject);
             Health -= 1;
         }
+        else if (other.CompareTag("Bull"))
+        {
+            Health -= 2;
+        }
     }
     public void doGameOver()
     {

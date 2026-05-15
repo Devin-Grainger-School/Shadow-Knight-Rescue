@@ -9,7 +9,7 @@ public class SluggerDetectCollisions : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Check if the object the projectile collided with has the "Enemy" tag
-        if (other.CompareTag("Monster"))
+        if (other.CompareTag("Monster") || other.CompareTag("Bull"))
         {
             Debug.Log("HUI");
             Destroy(other.gameObject); 

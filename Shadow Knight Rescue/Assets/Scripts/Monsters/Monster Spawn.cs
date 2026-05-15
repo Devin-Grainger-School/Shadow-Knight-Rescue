@@ -5,8 +5,11 @@ using System.Collections;
 public class MonsterSpawn : MonoBehaviour
 {
     public GameObject[] MonsterPrefabs;
-    private float spawnRangeX = 31;
-    private float spawnRangeZ = -.4f;
+    public float spawnRangeX = 31;
+    public float spawnRangeNegX = 31;
+    public float spawnRangeY = 3.51f;
+    public int Random1 = 3;
+    public int Random2 = 7;
     public int startDelay = 0;
     public int spawnInterval = 0;
 
@@ -25,8 +28,8 @@ public class MonsterSpawn : MonoBehaviour
     public IEnumerator SpawnRandomMonster()
     {
         yield return new WaitForSeconds(spawnInterval);
-        spawnInterval = Random.Range(3, 7);
-        Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 3.51f, 0);
+        spawnInterval = Random.Range(Random1, Random2);
+        Vector3 spawnPos = new Vector3(Random.Range(spawnRangeNegX, spawnRangeX), spawnRangeY, 0);
         int monsterIndex = Random.Range(0, MonsterPrefabs.Length);
         Instantiate(MonsterPrefabs[Random.Range(0,4)], spawnPos, MonsterPrefabs[monsterIndex].transform.rotation);
         StartCoroutine("SpawnRandomMonster");

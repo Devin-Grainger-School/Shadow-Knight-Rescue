@@ -265,7 +265,7 @@ MonoBehaviour:
   Door1: {fileID: 317991033}
   Door2: {fileID: 317991033}
   Door3: {fileID: 317991033}
-  Door4: {fileID: 0}
+  Door4: {fileID: 317991033}
   KeyButton: {fileID: 317991033}
   isPlayerInRange: 0
   TrueStory: 0
@@ -2135,7 +2135,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 197941171547887926, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3438,9 +3439,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 316629547}
     - target: {fileID: 1194287540730815646, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 317991033}
+    - target: {fileID: 1194287540730815646, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: button1Pushed
       value: 
       objectReference: {fileID: 1418824688}
+    - target: {fileID: 1194287540730815646, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2Pushed
+      value: 
+      objectReference: {fileID: 317991033}
     - target: {fileID: 1194287540730815646, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: isPlayerInRange
       value: 0
@@ -3494,14 +3503,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 316629547}
     - target: {fileID: 5999877696184059126, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 317991033}
+    - target: {fileID: 5999877696184059126, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: button1Pushed
       value: 
       objectReference: {fileID: 1418824688}
+    - target: {fileID: 5999877696184059126, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2Pushed
+      value: 
+      objectReference: {fileID: 317991033}
     - target: {fileID: 6487942303615330250, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: m_Name
       value: Button 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5888541558516362653, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10096,6 +10114,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 159111003238755814, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
     - {fileID: 197941171547887926, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
+    - {fileID: 2196654804488630555, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
+    - {fileID: 8018916778785260790, guid: 714844ec9d85de3459d0511d5f3e9f64, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -10167,9 +10187,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1273334563}
     - target: {fileID: 1194287540730815646, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 317991033}
+    - target: {fileID: 1194287540730815646, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: button1Pushed
       value: 
       objectReference: {fileID: 1787872935}
+    - target: {fileID: 1194287540730815646, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2Pushed
+      value: 
+      objectReference: {fileID: 317991033}
     - target: {fileID: 1766040530237119966, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: m_Size.z
       value: 33.64172
@@ -10211,9 +10239,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1273334563}
     - target: {fileID: 5888541558516362653, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 317991033}
+    - target: {fileID: 5888541558516362653, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: button1Pushed
       value: 
       objectReference: {fileID: 1787872935}
+    - target: {fileID: 5888541558516362653, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
+      propertyPath: button2Pushed
+      value: 
+      objectReference: {fileID: 317991033}
     - target: {fileID: 9026120831632044583, guid: c18dc3db8d5ad8f43a060ae71c2e3d55, type: 3}
       propertyPath: m_Size.z
       value: 33.641716
