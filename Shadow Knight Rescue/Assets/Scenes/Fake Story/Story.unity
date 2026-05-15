@@ -461,6 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 1
+  TrueStory: 0
   gameOverText: {fileID: 0}
   livecharac: {fileID: 1071595874}
 --- !u!4 &411359259
@@ -535,10 +536,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"Shadow\" and \"Eurydice\" where hanging out after all the battles they
+  m_text: "\"Shadow\" and \"Eurydice\" were hanging out after all the battles they
     had. They both couldn't wait to tell their parent, the other Sentaigers, what
     they were up to.\nBut then, suddenly, \"Eurydice\" got kidnapped by one of the
-    monsters that feeds on her tramas. \nIt's now up to \"Shadow\" to save \"Eurydice\"
+    monsters that feeds on her traumas. \nIt's now up to \"Shadow\" to save \"Eurydice\"
     from the monster's dungon."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -846,6 +847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 0
+  TrueStory: 0
   gameOverText: {fileID: 0}
   livecharac: {fileID: 0}
 --- !u!114 &829220337
@@ -2199,6 +2201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMenu: 0
   isGame: 0
+  TrueStory: 0
   gameOverText: {fileID: 0}
   livecharac: {fileID: 0}
 --- !u!4 &1845650110

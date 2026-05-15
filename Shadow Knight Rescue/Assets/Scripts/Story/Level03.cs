@@ -24,7 +24,7 @@ public class Level03 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Door1 && !Door2 && !Door3 && !Door4)
+        if (Door1.active == false && Door2.active == false && Door3.active == false && Door4.active == false)
         {
             LevelComplete.SetActive(false);
             //Destroy(LevelComplete);

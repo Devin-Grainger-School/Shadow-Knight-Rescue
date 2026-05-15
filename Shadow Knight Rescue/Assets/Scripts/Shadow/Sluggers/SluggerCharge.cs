@@ -25,6 +25,20 @@ public class SluggerCharge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Summons Lamb
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Instantiate(Lamb, transform.position, Lamb.transform.rotation);
+        }
+        //Summons Nightingale
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = 2.0f;       // we want 2m away from the camera position
+
+            Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
+            Instantiate(Nightingale, objectPos, Nightingale.transform.rotation);
+        }
         if (Slugger <= 1)
         {
 
@@ -52,20 +66,6 @@ public class SluggerCharge : MonoBehaviour
                 // Launch a projectile from the player Right
                 Instantiate(RightSlugger, transform.position, RightSlugger.transform.rotation);
                 Slugger++;
-            }
-            //Summons Lamb
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Instantiate(Lamb, transform.position, Lamb.transform.rotation);
-            }
-            //Summons Nightingale
-            if (Input.GetKeyDown(KeyCode.Mouse1))
-            {
-                Vector3 mousePos = Input.mousePosition;
-                mousePos.z = 2.0f;       // we want 2m away from the camera position
-
-                Vector3 objectPos = Camera.main.ScreenToWorldPoint(mousePos);
-                Instantiate(Nightingale, objectPos, Nightingale.transform.rotation);
             }
         }
     }

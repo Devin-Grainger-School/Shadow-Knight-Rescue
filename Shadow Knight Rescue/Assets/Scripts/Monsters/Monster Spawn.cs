@@ -25,7 +25,7 @@ public class MonsterSpawn : MonoBehaviour
     public IEnumerator SpawnRandomMonster()
     {
         yield return new WaitForSeconds(spawnInterval);
-        spawnInterval = Random.Range(2, 4);
+        spawnInterval = Random.Range(3, 7);
         Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeX), 3.51f, 0);
         int monsterIndex = Random.Range(0, MonsterPrefabs.Length);
         Instantiate(MonsterPrefabs[Random.Range(0,4)], spawnPos, MonsterPrefabs[monsterIndex].transform.rotation);

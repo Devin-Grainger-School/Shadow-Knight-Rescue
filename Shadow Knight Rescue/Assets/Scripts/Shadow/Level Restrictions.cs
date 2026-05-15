@@ -6,6 +6,8 @@ public class LevelRestrictions : MonoBehaviour
     public float xaxis = 0;
     public float negyaxis = 0;
     public float yaxis = 0;
+
+    public GameObject LevelComplete;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,6 +33,10 @@ public class LevelRestrictions : MonoBehaviour
         if (transform.position.y > yaxis)
         {
             transform.position = new Vector3(transform.position.x, yaxis, transform.position.z);
+        }
+        if (LevelComplete.active == false)
+        {
+            negxaxis = -20;
         }
     }
 }

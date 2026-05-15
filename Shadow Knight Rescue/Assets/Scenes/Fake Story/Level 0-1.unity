@@ -3194,6 +3194,7 @@ GameObject:
   - component: {fileID: 955426170}
   - component: {fileID: 955426173}
   - component: {fileID: 955426172}
+  - component: {fileID: 955426174}
   m_Layer: 0
   m_Name: Light_0
   m_TagString: Untagged
@@ -3341,6 +3342,19 @@ MonoBehaviour:
   Flower: 1
   isPlayerInRange: 0
   Button: {fileID: 1418561025}
+--- !u!114 &955426174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955426167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39f322adb49d144c8723b8185d690f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SluggerCharge: {fileID: 1881692355}
 --- !u!1 &969710673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4262,6 +4276,7 @@ GameObject:
   - component: {fileID: 1303195339}
   - component: {fileID: 1303195338}
   - component: {fileID: 1303195341}
+  - component: {fileID: 1303195342}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Ground
@@ -4379,6 +4394,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1303195342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303195336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39f322adb49d144c8723b8185d690f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SluggerCharge: {fileID: 1881692355}
 --- !u!1 &1330799215
 GameObject:
   m_ObjectHideFlags: 0
@@ -4433,6 +4461,8 @@ GameObject:
   - component: {fileID: 1352339432}
   - component: {fileID: 1352339431}
   - component: {fileID: 1352339430}
+  - component: {fileID: 1352339435}
+  - component: {fileID: 1352339434}
   m_Layer: 0
   m_Name: Wall South
   m_TagString: Ground
@@ -4556,6 +4586,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352339428}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1352339434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352339428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1352339435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352339428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39f322adb49d144c8723b8185d690f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SluggerCharge: {fileID: 1881692355}
 --- !u!1 &1374215266
 GameObject:
   m_ObjectHideFlags: 0
@@ -5582,6 +5646,8 @@ GameObject:
   - component: {fileID: 1606358195}
   - component: {fileID: 1606358194}
   - component: {fileID: 1606358193}
+  - component: {fileID: 1606358198}
+  - component: {fileID: 1606358197}
   m_Layer: 0
   m_Name: Wall North
   m_TagString: Ground
@@ -5705,6 +5771,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606358191}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1606358197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606358191}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1606358198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606358191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39f322adb49d144c8723b8185d690f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SluggerCharge: {fileID: 1881692355}
 --- !u!1 &1607393644
 GameObject:
   m_ObjectHideFlags: 0
@@ -5829,7 +5929,7 @@ MonoBehaviour:
   KeyButton: {fileID: 122177524}
   isPlayerInRange: 0
   TrueStory: 0
-  FalseStory: 0
+  FalseStory: 1
 --- !u!65 &1607393649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5860,6 +5960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1616191314}
+  - component: {fileID: 1616191315}
   m_Layer: 0
   m_Name: Doors
   m_TagString: Untagged
@@ -5885,6 +5986,19 @@ Transform:
   - {fileID: 97888514}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1616191315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616191313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39f322adb49d144c8723b8185d690f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SluggerCharge: {fileID: 1881692355}
 --- !u!1 &1688088948
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,6 +6184,10 @@ PrefabInstance:
       propertyPath: negxaxis
       value: -13.8
       objectReference: {fileID: 0}
+    - target: {fileID: 5299610021305647454, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: LevelComplete
+      value: 
+      objectReference: {fileID: 836264039}
     - target: {fileID: 5583861909352498086, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: m_Name
       value: Shadow Knight
@@ -6174,6 +6292,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8207853611233027987, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
   m_PrefabInstance: {fileID: 1881692352}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1881692355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7024999457663921082, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+  m_PrefabInstance: {fileID: 1881692352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235816233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c78e0fff609a14c807cda5a6507419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1888178995
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,6 +6316,7 @@ GameObject:
   - component: {fileID: 1888178999}
   - component: {fileID: 1888178998}
   - component: {fileID: 1888178997}
+  - component: {fileID: 1888179001}
   m_Layer: 0
   m_Name: Wall East
   m_TagString: Ground
@@ -6251,7 +6381,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
@@ -6310,6 +6440,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888178995}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1888179001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888178995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39f322adb49d144c8723b8185d690f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SluggerCharge: {fileID: 1881692355}
 --- !u!1 &1943529452
 GameObject:
   m_ObjectHideFlags: 0

@@ -80,4 +80,8 @@ public class MenuScrpit : MonoBehaviour
     {
         SceneManager.LoadScene("True Cutscene");
     }
+    public void True3()
+    {
+        SceneManager.LoadScene("Level T-3");
+    }
 }

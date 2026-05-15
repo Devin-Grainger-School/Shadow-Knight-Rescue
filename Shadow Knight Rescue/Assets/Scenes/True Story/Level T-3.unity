@@ -11604,6 +11604,7 @@ GameObject:
   - component: {fileID: 1607393645}
   - component: {fileID: 1607393647}
   - component: {fileID: 1607393648}
+  - component: {fileID: 1607393649}
   m_Layer: 0
   m_Name: Dungon Door_0
   m_TagString: Untagged
@@ -11719,6 +11720,27 @@ MonoBehaviour:
   FalseStory: 0
   Level2Door: 0
   Level4Door: 1
+--- !u!65 &1607393649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607393644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.88, y: 5.06, z: 34.96}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1608721156
 GameObject:
   m_ObjectHideFlags: 0
@@ -13580,10 +13602,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Clock
       objectReference: {fileID: 0}
+    - target: {fileID: 5299610021305647454, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: LevelComplete
+      value: 
+      objectReference: {fileID: 836264039}
     - target: {fileID: 5583861909352498086, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: m_Name
       value: Shadow Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 6435053455241561105, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
+      propertyPath: TextBox
+      value: 
+      objectReference: {fileID: 836264039}
     - target: {fileID: 8207853611233027987, guid: f81713ca5935e4548b5d5ceb96139c80, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.72

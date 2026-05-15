@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/True Story/Level True Boss.unity
     guid: c4f942d45e323cf4893fdf8201a70880
   - enabled: 1
+    path: Assets/Scenes/True Story/Victory.unity
+    guid: 881932a9f23f7bc4e90fba8530ff9aff
+  - enabled: 1
     path: Assets/Scenes/True Story/True Game Over.unity
     guid: dac88f94af055324c94a2104a3cac78a
   - enabled: 1
@@ -47,6 +50,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fake Story/Level 0-1.unity
     guid: ffd1affb63908d04c988e2291b29f08a
+  - enabled: 1
+    path: Assets/Scenes/Fake Story/Level 0-2.unity
+    guid: f924a7ff622f346499d819f28f30953f
+  - enabled: 1
+    path: Assets/Scenes/Fake Story/Level 0-3.unity
+    guid: a7380da619d928d41a3333485288af1a
+  - enabled: 1
+    path: Assets/Scenes/Fake Story/Cutscene.unity
+    guid: 0dc49ed6c544cbf49bb594077c83e724
+  - enabled: 1
+    path: Assets/Scenes/Fake Story/Level Boss.unity
+    guid: 68289c8cebee3a84dac872af40b39e6f
+  - enabled: 1
+    path: Assets/Scenes/Fake Story/Fake Victory.unity
+    guid: 97417b5e18c94424d86220eb583e8498
   - enabled: 1
     path: Assets/Scenes/Fake Story/Game Over.unity
     guid: f054bb84ae2a59847b4df9e71c328497

@@ -14,7 +14,7 @@ public class ChangeColliders : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (LevelComplete.active == false)
+        if (LevelComplete == false)
         {
             LevelRestrictions.negxaxis = -20;
         }
